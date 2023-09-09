@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("./images/stefan-vladimirov-Q_Moi2xjieU-unsplash.jpg");   
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover; 
+  }
+
+ 
+
+.heading {
+  color: white;
+  text-align: center; 
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inp-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap:wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.searchdiv{
+  display:flex ;   
+  flex-wrap: wrap;
+}
+
+.searchbox {
+  width: 500px;
+  border-radius: 10px;
+  border: white;
+}
+
+@media screen and (max-width: 575px) {
+  .searchbox {
+    width: 250px;
+    border-radius: 10px;
+    border: white;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.result-container {
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.result-single-card {
+  padding: 10px; 
+  gap: 10px;
+
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-wrap: wrap;
 }
